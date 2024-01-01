@@ -1,0 +1,208 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+a{
+  all: unset;
+}
+
+header{
+  width: 100%;
+}
+
+.logo-box{
+  width: 100%;
+  height: 50px;
+  background-color: #E6F3DD;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo{
+  line-height: 50px;
+  font-size: 3rem;
+  font-family: 'Dongle', sans-serif;
+  margin-left: 15px;
+}
+
+.logo-img{
+  height: 2.2rem;
+  margin-top: 10px;
+}
+
+.main-img{
+  width: 100%;
+}
+
+section{
+  width: 100%;
+  margin-top: 80px;
+}
+
+.explain-container{
+  display: flex;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.explain-box1{
+  font-size: 3rem;
+  font-family: 'Black Han Sans', sans-serif;
+}
+
+.explain-box2{
+  font-size: 2rem;
+}
+
+.explain-box3{
+  font-size: 2rem;
+}
+
+.explain-box4{
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+
+.explain-img{
+  height: 20rem;
+}
+
+.explain-content{
+  margin-right: 10rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  list-style: none;
+}
+
+section{
+  width: 100%;
+}
+
+.main-title{
+  font-size: 3.5rem;
+  text-align: center;
+  color: #00B35D;
+}
+
+.positive-container{
+  width: 50%;
+  height: 500px;
+  margin: auto;
+}
+
+.positive-main{
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2.5rem;
+}
+
+.positive-box{
+  list-style: none; 
+}
+
+.positive-title{
+  color: #00B35D;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.positive-explain{
+  margin-top: 5px;
+}
+
+.positive-button{
+  background-color: #00B35D;
+  text-align: center;
+  width: 100%;
+  align-items: center;
+}
+
+.positive-button1{
+  background-color: #00B35D;
+  text-align: center;
+  width: 110%;
+  align-items: center;
+}
+
+.positive-button :hover{
+  cursor: pointer;
+  color: #fff;
+  background-color: #00a957;
+}
+
+.positive-button1 :hover{
+  cursor: pointer;
+  color: #fff;
+  background-color: #00a957;
+}
+
+.positive-img{
+  height: 110px;
+}
+
+footer{
+  width: 100%;
+  height: 100%;
+  background-color: #e8fdd7;
+}
+
+.footer-main:hover{
+  cursor: pointer;
+  color: skyblue;
+}
+
+/*세로모드 모바일 디바이스*/
+@media only screen and (max-width: 575px) {
+  .main-img img {
+    height: 15rem; 
+  }
+
+  .explain-container {
+    flex-direction: column; /* 내용을 세로로 배열 */
+    height: auto; /* 높이를 자동으로 조절*/
+  }
+
+  .explain-content {
+    margin-right: 0; /* 오른쪽 여백 제거 */
+  }
+
+  .positive-container {
+    width: 80%; 
+  }
+}
+ 
+ 
+/*가로모드 모바일 디바이스*/
+@media only screen and (max-width: 767px) {
+  .main-title {
+    font-size: 2.5rem; 
+  }
+
+  .positive-container {
+    width: 70%; 
+  }
+}
+ 
+/*태블릿 디바이스*/
+@media only screen and (max-width: 991px) {
+  .main-img img {
+    height: 20rem; 
+  }
+
+  .positive-title {
+    font-size: 1rem; 
+  }
+}

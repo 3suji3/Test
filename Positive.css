@@ -1,0 +1,159 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.inner{
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  background-color: #E6F3DD;
+}
+
+body{
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+a{
+  all: unset;
+}
+
+header{
+  width: 100%;
+  position: fixed;
+  position: relative;
+}
+
+.head-main{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title{
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #00B35D;
+  text-align: center;
+  padding-bottom: 20px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+nav{
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  background-color: #00B35D;
+  margin-top: -15px;
+}
+
+.nav-container{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+ a:hover{
+  cursor: pointer;
+  color: #376b0f;
+}
+
+section{
+  width: 100%;
+  height: 570px; 
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.section-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.section-box {
+  margin-left: 200px;
+  margin-right: 210px;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.section-main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 530px;
+  position: relative;
+  left: 0;
+  transition: left 0.15s;
+  background-color: #DBF4C7;
+  border-radius: 30px;
+  box-shadow: 10px 10px 10px -5px rgba(25, 42, 70, 0.2);
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 3rem;
+  margin-left: 10px;
+  margin-bottom: 1000px;
+  list-style: none;
+}
+
+.arrow{  /*도움받음*/
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transition: filter 0.8s;
+  filter: brightness(0.8);
+  margin-top: 200px;
+  top: 0px;
+  color: #e6F3DD;
+  transform: 0.2s;
+  cursor: pointer;
+}
+
+.prev {
+  left: -150px;
+}
+
+.next {
+  right: -170px;
+}
+
+.arrow:hover {
+  transition: 0.2s; /*도움받음*/
+  color: #376b0f;
+}
+
+.footer{
+  width: 100%;
+  height: 55px;
+  padding-left: 10px;
+  line-height: 55px;
+  background-color: #e8fdd7;
+  border-top: solid gainsboro;
+}
+
+.footer-main{
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-main>a:hover{
+  cursor: pointer;
+  color: skyblue;
+}
+@media only screen and (max-width: 575px) {
+  .section-main{
+    font-size: 1.5rem;
+  }
+}
